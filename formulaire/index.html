@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Formulaire</title>
+  </head>
+
+
+<body>
+    <div style="background-color: rgb(0, 162, 255);  padding-top: 20px;padding-bottom: 20px;">
+  <div class="container" style="margin: auto; width: 300px; background-color: white;   ">
+    <form action="" method="post">
+      <label for="Nom"> <span style="color: red; margin-left: 20px; "> *</span> Nom </label><br/>
+      <input type=" text" name="Nom" placeholder="Entrez votre nom" id="Prenom" style="margin-left: 20px; width: 240px;" required />
+      <br/>
+
+      <label for="Prenom"> <span style="color: red;margin-left: 20px;"> *</span> Prénom </label><br/>
+      <input type=" text" name="Prenom" placeholder="Entrez votre prénom" id="Prenom" style="margin-left: 20px; width: 240px;" required />
+      <br/>
+
+      <label for="email"> <span style="color: red;margin-left: 20px;"> *</span> Email</label><br/>
+      <input type="email" name="email" id="email" placeholder="Entrez votre email" style="margin-left: 20px;  width: 240px;" required />
+      <br/>
+
+      <label for="age"><span style="color: red; margin-left: 20px;"> *</span> Age</label><br/>
+      <input type="text" name="age" placeholder="Entrez votre age" style="margin-left: 20px;  width: 240px;" required />
+      <br/>
+
+      <label style="margin-left: 20px;">Est-ce que tu recommanderais Automation Tester Academy à un ami ?</label>
+      <div class="radio">
+        <label>
+          <input type="radio" name="recommander" value="ye" style="margin-left: 20px;" />
+          Oui
+        </label><br/>
+
+        <label>
+          <input type="radio" name="recommander" value="No" style="margin-left: 20px;" />
+          Non
+        </label><br/>
+
+        <label>
+          <input type="radio" name="recommander" value="Maybe" style="margin-left: 20px;"/>
+          Peut-etre
+        </label><br/>
+      </div>
+
+      <label class="target" style="margin-left: 20px;">Frameworks d'automatisation de tests que vous connaissez </label>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name="Frameworks" value="cypress" style="margin-left: 20px;"/>
+          Cypress
+        </label><br/>
+
+        <label>
+          <input type="checkbox" name="Frameworks" value="selenium" style="margin-left: 20px;" />
+          Selenium Webdriver
+        </label><br/>
+
+        <label>
+          <input type="checkbox" name="Frameworks" value="protractor" style="margin-left: 20px;"/>
+          Protractor
+        </label><br/>
+
+        <label>
+          <input type="checkbox" name="Frameworks" value="appium" style="margin-left: 20px;">
+          Appium
+        </label><br/>
+
+        <label>
+          <input type="checkbox" name="Frameworks" value="calabash"style="margin-left: 20px;" />
+          Calabash
+        </label><br/>
+
+      </div>
+
+      <label for="level" style="margin-left: 20px;">Comment trouvez vous HTML ?<span style="color: red;margin-left: 20px;"> *</span></label><br/>
+      <select name="level" required style="margin-left: 20px;  width: 240px;">
+        <option value="low">Facile</option>
+        <option value="medium">Moyen</option>
+        <option value="high">Dur</option>
+        <option value="very-high">Très dur</option>
+      </select>
+      <br/>
+
+      <label class="target" for="suggestion" style="margin-left: 20px;">Vos suggestions pour la formation :</label>
+      <br/>
+      <textarea name="suggestion" id="suggestions" cols="5" rows="4" style="width:240px;margin-left: 20px;"></textarea>
+      <br/>
+
+      <button type="submit" value="submit" style="background-color: green; border: none; width:240px;margin-left: 20px;">Envoyer</button>
+      <br/>
+
+      <button type="reset" value="cancel" style="background-color: red;border: none; width:240px; margin-left: 20px;">Annuler</button>
+      <br/>
+
+    </form>
+  </div>
+</div>
+</body>
+
+</html>
